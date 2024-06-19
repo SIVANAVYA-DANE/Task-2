@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Sharma Tribute Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rohit Sharma: The Hitman of Indian Cricket</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#career">Career Highlights</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </nav>
+        <section id="intro" class="intro">
+            <img src="rohit-sharma.jpg" alt="Rohit Sharma" class="profile-pic">
+            <p>Rohit Sharma fondly known as the "Hitman", is an Indian cricketer and a right-handed batsman who is known for his explosive batting style and elegant strokes. He is one of the most successful and prolific batsmen in the history of cricket.</p>
+        </section>
+        <section id="career" class="career">
+            <h2>Career Highlights</h2>
+            <ul>
+                <li>Born: April 30, 1987 in Bansod, Nagpur, Maharashtra, India</li>
+                <li>ODI Debut: June 23, 2007 against Ireland</li>
+                <li>Test Debut: November 6, 2013 against West Indies</li>
+                <li>Only player to have three double centuries in ODIs</li>
+                <li>Leading run-scorer in a single edition of the ICC World Cup (2019)</li>
+            </ul>
+        </section>
+        <section id="stats" class="stats">
+            <h2>Career Stats</h2>
+            <div class="stats-container">
+                <div class="stat">
+                    <h3>ODIs</h3>
+                    <p>Matches: 224</p>
+                    <p>Runs: 9205</p>
+                    <p>Average: 49.27</p>
+                </div>
+                <div class="stat">
+                    <h3>Tests</h3>
+                    <p>Matches: 38</p>
+                    <p>Runs: 2615</p>
+                    <p>Average: 46.69</p>
+                </div>
+                <div class="stat">
+                    <h3>T20Is</h3>
+                    <p>Matches: 108</p>
+                    <p>Runs: 2773</p>
+                    <p>Average: 32.24</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery" class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="photos">
+                <img src="photo1.jpg" alt="Rohit Sharma in action" onclick="openModal(this)">
+                <img src="photo2.jpg" alt="Rohit Sharma celebrating a century" onclick="openModal(this)">
+                <img src="photo3.jpg" alt="Rohit Sharma with the trophy" onclick="openModal(this)">
+            </div>
+        </section>
+        
+        <section id="timeline" class="timeline">
+            <h2>Timeline</h2>
+            <ul>
+                <li><span>2007</span> - ODI Debut</li>
+                <li><span>2013</span> - Test Debut</li>
+                <li><span>2014</span> - First ODI Double Century</li>
+                <li><span>2017</span> - Third ODI Double Century</li>
+                <li><span>2019</span> - Leading Run-Scorer in World Cup</li>
+            </ul>
+        </section>
+        <footer>
+            <p>© 2024 Rohit Sharma Tribute Page</p>
+        </footer>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
